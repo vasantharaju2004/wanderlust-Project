@@ -1,0 +1,29 @@
+const Joi = require("joi");
+
+module.exports.listingSchema =Joi.object({
+    listing:Joi.object({
+        title:Joi.string().pattern(/^[a-zA-Z ]+$/).required(),
+        description:Joi.string().required(),
+        location: Joi.string().required(),
+        country: Joi.string().pattern(/^[a-zA-Z ]+$/).required(),
+        price:Joi.number().min(0).required(),
+        image:Joi.object({
+            url:Joi.string().uri().allow("",null)
+        }).optional(),
+        geometry: Joi.object({
+            type: Joi.string().valid('Point').required(),
+            coordinates: Joi.array()
+                .items(Joi.number().required())
+                .length(2)
+                .required()
+        }).required()
+    }).required()
+});
+
+module.exports.reviewSchema = Joi.object({
+    review:Joi.object({
+        rating:Joi.number().min(1).max(5).required(),
+        comment:Joi.string().required(),
+
+    }).required()
+});
