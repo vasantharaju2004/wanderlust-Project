@@ -32,6 +32,7 @@ Users can create an account, log in securely, and interact with the application 
        📂 Static assets management (CSS, JS, Images)
 
 ---------------------------------------------------------
+
 🧠 Tech Stack
   Backend
 
@@ -66,6 +67,7 @@ Tools & Utilities
 -----------------------------------------------------------
 
 🏗️ Project Architecture
+
 wanderlust-Project/
 │
 ├── controllers/     # Business logic
@@ -84,34 +86,40 @@ wanderlust-Project/
 ---------------------------------------------------------------
 
 ⚙️ Installation & Setup
+
 1️⃣ Clone the repository
-git clone https://github.com/vasantharaju2004/wanderlust-Project.git
-cd wanderlust-Project
+
+       git clone https://github.com/vasantharaju2004/wanderlust-Project.git
+       
+       cd wanderlust-Project
 
 ---------------------------------------------------------------
 
 2️⃣ Install dependencies
-npm install
+
+       npm install
 
 ------------------------------------------------------------
 
 3️⃣ Configure Environment Variables
 
-Create a .env file in the root directory:
-
-MONGO_URI=your_mongodb_atlas_connection_string
-PORT=3000
+       Create a .env file in the root directory:
+       
+       MONGO_URI=your_mongodb_atlas_connection_string
+       PORT=3000
 
 ------------------------------------------------------------------
 
 4️⃣ Run the application
-npm start
+
+       npm start
 
 
 ------------------------------------------------------------
 
 5️⃣ Open in browser
-http://localhost:3000
+
+       http://localhost:3000
 
 ------------------------------------------------------------
 
